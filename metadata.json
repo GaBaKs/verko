@@ -1,0 +1,8 @@
+{
+  "name": "VERKO v2",
+  "description": "Gestor de presupuestos y renders para diseño de interiores y carpintería",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

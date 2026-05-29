@@ -1,0 +1,61 @@
+import type { Config } from 'tailwindcss';
+
+export default {
+  content: ['./index.html', './src/**/*.{ts,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        verko: {
+          bg:           '#0B0E14',
+          card:         'rgba(12,16,22,0.72)',
+          sidebar:      '#1A1D23',
+          text:         '#E8E8E8',
+          secondary:    '#C0B8B0',
+          muted:        '#888888',
+          dim:          'rgba(255,255,255,0.35)',
+          border:       'rgba(255,255,255,0.08)',
+          gold:         '#B8973A',
+          'gold-light': '#C79943',
+          'gold-bg':    'rgba(199,153,67,0.12)',
+          blue:         '#2C5F7C',
+          'blue-bg':    '#0D1E28',
+          green:        '#2D6B4A',
+          'green-bg':   '#0D2218',
+          orange:       '#B8600D',
+          'orange-bg':  '#2A1A08',
+          red:          '#C0392B',
+          'red-bg':     '#2A0D0A',
+          yellow:       '#9A7D0A',
+          'yellow-bg':  '#221C04',
+          purple:       '#6C3483',
+          'purple-bg':  '#1C0E22',
+          teal:         '#1A8A6A',
+          'teal-bg':    '#082218',
+          gray:         '#777777',
+          'gray-bg':    'rgba(255,255,255,0.06)',
+          hover:        'rgba(255,255,255,0.05)',
+        },
+      },
+      fontFamily: {
+        serif: ['Instrument Serif', 'Georgia', 'serif'],
+        sans:  ['Archivo', 'system-ui', 'sans-serif'],
+        mono:  ['JetBrains Mono', 'monospace'],
+      },
+      borderRadius: {
+        DEFAULT: '8px',
+        sm:  '5px',
+        lg:  '12px',
+        xl:  '16px',
+        '2xl': '24px',
+        '3xl': '28px',
+      },
+      boxShadow: {
+        DEFAULT: '0 1px 3px rgba(0,0,0,0.12)',
+        md:   '0 4px 12px rgba(0,0,0,0.18)',
+        lg:   '0 18px 44px rgba(0,0,0,0.32)',
+        gold: '0 0 0 1px rgba(184,151,58,0.35)',
+      },
+    },
+  },
+  plugins: [],
+} satisfies Config;
